@@ -17,7 +17,7 @@ public class LogisticsBase {
 
     private static final Logger logger = LogManager.getLogger();
     private static LogisticsBase INSTANCE;
-    private static final int TERMINAL_CAPACITY = 10;
+    private static final int TERMINAL_CAPACITY = 4;
     private Queue<Terminal> terminals = new ArrayDeque<>();
     private Queue<Van> awayVans = new PriorityQueue<>(new VanProductStateComparator());
     private static Semaphore semaphore = new Semaphore(TERMINAL_CAPACITY, true);
