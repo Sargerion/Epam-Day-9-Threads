@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Terminal {
 
     private static final Logger logger = LogManager.getLogger();
-    private static final int WAIT_VAN_COUNT = 10;
+    private static final int WAIT_VAN_COUNT = 4;
     private String terminalId;
 
     public Terminal() {
